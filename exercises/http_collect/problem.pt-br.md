@@ -11,8 +11,8 @@ Existem duas abordagens para você resolver este problema:
 
 **2)** Use um pacote de terceiros para abstrair as dificuldades envolvidas em coletar uma stream inteira de dados. Dois pacotes diferentes fornecem uma API útil para resolver este problema (existem mais parecidos!): `bl` (Buffer List) e `concat-stream`; faça sua escolha!
 
-  <http://npm.im/bl>
-  <http://npm.im/concat-stream>
+  <https://npmjs.com/bl>
+  <https://npmjs.com/concat-stream>
 
 Para instalar um pacote Node, use o Node Package Manager `npm`. Apenas digite:
 
@@ -33,7 +33,7 @@ Se você não tem uma conexão com a internet, simplesmente crie um diretório `
   {rootdir:/node_modules/bl}
   {rootdir:/node_modules/concat-stream}
 
-Ambos `bl` e `concat-stream` pode ter uma stream *piped* (canalizada) dentro deles e então vão coletar os dados para você. Uma vez que a stream terminou, um callback vai ser disparado com os dados:
+Ambos `bl` e `concat-stream` podem ter uma stream *piped* (canalizada) dentro deles e então vão coletar os dados para você. Uma vez que a stream terminou, um callback vai ser disparado com os dados:
 
 ```js
 response.pipe(bl(function (err, data) { /* ... */ }))
@@ -47,5 +47,3 @@ A documentação para ambos estes módulos foram instaladas juntamente com {appn
 
   {rootdir:/docs/bl.html}
   {rootdir:/docs/concat-stream.html}
-
-----------------------------------------------------------------------
